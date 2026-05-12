@@ -219,4 +219,4 @@ Base URL : `https://api.wave.com`
 
 ---
 
-*© 2024 Jaxaay Group — Licence GPL v2 or later*
+*© 2026 Jaxaay Group — Licence GPL v2 or later*

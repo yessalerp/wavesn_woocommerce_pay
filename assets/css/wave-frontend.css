@@ -1,0 +1,160 @@
+/**
+ * Wave Sénégal - Styles Frontend
+ * WooCommerce Payment Gateway
+ */
+
+/* ============================================================
+   Checkout - Méthode de paiement Wave
+============================================================ */
+.payment_method_wave_senegal label img {
+    max-height: 30px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.payment_method_wave_senegal .payment_box {
+    background: linear-gradient(135deg, #f0faf4 0%, #e8f5e9 100%);
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.wave-sn-payment-description {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.wave-sn-logo-container {
+    flex-shrink: 0;
+}
+
+.wave-sn-logo-container img {
+    width: 60px;
+    height: auto;
+}
+
+.wave-sn-info p {
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.wave-sn-info p:last-child {
+    margin: 0;
+}
+
+.wave-sn-steps {
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.wave-sn-steps li {
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.wave-sn-steps li::before {
+    content: "✓";
+    color: #1a9e5c;
+    font-weight: bold;
+}
+
+/* ============================================================
+   Page de confirmation (Thank You Page)
+============================================================ */
+.wave-sn-payment-info,
+.wave-sn-payment-error,
+.wave-sn-payment-pending {
+    padding: 20px 24px;
+    border-radius: 10px;
+    margin: 24px 0;
+}
+
+.wave-sn-payment-info {
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    border-left: 4px solid #1a9e5c;
+    border: 1px solid #a5d6a7;
+}
+
+.wave-sn-payment-info h3 {
+    color: #1a9e5c;
+    margin-top: 0;
+}
+
+.wave-sn-payment-error {
+    background: #fff3e0;
+    border-left: 4px solid #e65100;
+    border: 1px solid #ffcc80;
+}
+
+.wave-sn-payment-pending {
+    background: #e3f2fd;
+    border-left: 4px solid #1565c0;
+    border: 1px solid #90caf9;
+    text-align: center;
+}
+
+.wave-sn-loader {
+    font-size: 28px;
+    animation: wave-pulse 1.5s ease-in-out infinite;
+    margin: 8px 0;
+}
+
+@keyframes wave-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.1); }
+}
+
+.wave-sn-transaction-details {
+    background: white;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.wave-sn-transaction-details dt {
+    font-weight: 600;
+    color: #333;
+    float: left;
+    clear: left;
+    width: 180px;
+    margin-bottom: 8px;
+}
+
+.wave-sn-transaction-details dd {
+    margin-left: 190px;
+    margin-bottom: 8px;
+    color: #555;
+    font-family: monospace;
+}
+
+/* ============================================================
+   Responsive
+============================================================ */
+@media (max-width: 480px) {
+    .wave-sn-payment-description {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wave-sn-steps {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .wave-sn-transaction-details dt,
+    .wave-sn-transaction-details dd {
+        float: none;
+        width: auto;
+        margin-left: 0;
+    }
+}

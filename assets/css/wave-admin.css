@@ -1,0 +1,206 @@
+/**
+ * Wave Sénégal — Styles Administration
+ * Jaxaay Group · jaxaaygroup.com · +221 78 651 15 15
+ */
+
+/* ============================================================
+   Bannière & branding admin
+============================================================ */
+.wave-sn-admin-description {
+    margin: -12px -12px 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.wave-sn-banner-wrap {
+    width: 100%;
+    max-height: 120px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.wave-sn-admin-banner {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.wave-sn-admin-meta {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 16px;
+    background: #f8fcff;
+    border: 1px solid #d0eaf7;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.wave-sn-admin-meta-left {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.wave-sn-admin-logo {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(26, 189, 224, 0.3);
+}
+
+.wave-sn-admin-text p {
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Badges */
+.wave-sn-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-right: 4px;
+}
+.wave-sn-badge--blue   { background: #e3f2fd; color: #1565c0; }
+.wave-sn-badge--green  { background: #e8f5e9; color: #2e7d32; }
+.wave-sn-badge--orange { background: #fff3e0; color: #e65100; }
+.wave-sn-badge--purple { background: #f3e5f5; color: #6a1b9a; }
+
+/* Carte développeur */
+.wave-sn-dev-card {
+    background: white;
+    border: 1px solid #d0eaf7;
+    border-radius: 8px;
+    padding: 14px 18px;
+    min-width: 270px;
+    font-size: 12px;
+    line-height: 1.7;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.wave-sn-dev-card__title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    margin: 0 0 4px !important;
+}
+
+.wave-sn-dev-card__name {
+    font-size: 14px !important;
+    color: #1a9e5c !important;
+    margin: 0 0 8px !important;
+}
+
+.wave-sn-dev-card p {
+    margin: 0 !important;
+    color: #555;
+}
+
+.wave-sn-dev-card a {
+    color: #1565c0;
+    text-decoration: none;
+}
+.wave-sn-dev-card a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   Webhook URL
+============================================================ */
+.wave-sn-webhook-url-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0f8f4;
+    border: 1px solid #a5d6a7;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 10px 0 0;
+}
+
+.wave-sn-webhook-url-container code {
+    flex: 1;
+    font-size: 12px;
+    word-break: break-all;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #1565c0;
+    font-family: monospace;
+}
+
+.wave-sn-copy-btn {
+    flex-shrink: 0;
+    padding: 4px 12px !important;
+    font-size: 12px !important;
+    background: #1a9e5c !important;
+    color: white !important;
+    border-color: #157a47 !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.wave-sn-copy-btn:hover {
+    background: #157a47 !important;
+}
+
+/* ============================================================
+   Test API
+============================================================ */
+#wave-sn-validate-api {
+    background: #1abde0;
+    color: white;
+    border-color: #14a0c0;
+    font-weight: 500;
+}
+#wave-sn-validate-api:hover {
+    background: #14a0c0;
+    border-color: #0e8aaa;
+    color: white;
+}
+
+#wave-sn-api-test-result {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 8px;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+#wave-sn-api-test-result.success {
+    background: #e8f5e9;
+    color: #1b5e20;
+    border: 1px solid #a5d6a7;
+}
+#wave-sn-api-test-result.error {
+    background: #ffebee;
+    color: #b71c1c;
+    border: 1px solid #ef9a9a;
+}
+
+/* ============================================================
+   Responsive
+============================================================ */
+@media (max-width: 900px) {
+    .wave-sn-admin-meta {
+        flex-direction: column;
+    }
+    .wave-sn-dev-card {
+        min-width: auto;
+        width: 100%;
+    }
+}

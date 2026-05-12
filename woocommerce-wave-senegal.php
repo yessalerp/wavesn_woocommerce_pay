@@ -17,7 +17,7 @@
  *
  * @package    WC_Wave_Senegal
  * @author     Jaxaay Group <jaxaay@jaxaaygroup.com>
- * @copyright  2024 Jaxaay Group
+ * @copyright  2026 Jaxaay Group
  * @license    GPL-2.0-or-later
  *
  * Développé par  : Jaxaay Group

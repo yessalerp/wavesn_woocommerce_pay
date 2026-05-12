@@ -193,7 +193,7 @@ Base URL : `https://api.wave.com`
 
 ## 📝 Changelog
 
-### v2.0.0 (2024)
+### v2.0.0 (Mai 2026)
 - Réécriture complète PHP 7.4+ avec types stricts
 - Branding & intégration **Jaxaay Group**
 - Logo Wave intégré (checkout + admin)
